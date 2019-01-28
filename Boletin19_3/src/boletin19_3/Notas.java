@@ -1,28 +1,22 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package boletin19_3;
 
 import javax.swing.JOptionPane;
 
 /**
- *
  * @author raguiarperez
  */
 public class Notas {
-       //Método para introducir valores.
+    //Introducir valores.
 
     public int darValorInt() {
-        return Integer.parseInt(JOptionPane.showInputDialog("Nota: "));
+        return Integer.parseInt(JOptionPane.showInputDialog("Nota : "));
     }
 
     public String darValorString() {
         return JOptionPane.showInputDialog("Nombre alumno: ");
     }
 
-    //Método que visualiza los alumnos aprobados.
+    //Alumnos aprobados.
     public void aprobados(int[] arrayI, String[] arrayS) {
 
         for (int i = 0; i < arrayI.length; i++) {
@@ -32,7 +26,7 @@ public class Notas {
         }
     }
 
-    //Método para introducir valores de notas y nombres de alumnos.
+    //Introducir notas y nombres de alumnos.
     public void notasAlumnos(int[] arrayI, String[] arrayS) {
         for (int i = 0; i < arrayI.length; i++) {
             arrayI[i] = darValorInt();
@@ -40,7 +34,7 @@ public class Notas {
         }
     }
 
-    //Método para ordenar las notas en orden creciente.
+    //Ordenar las notas en orden creciente.
     public void lista(int[] arrayI, String[] arrayS) {
 
         int aux;
@@ -59,7 +53,7 @@ public class Notas {
         }
     }
 
-    //Método para visualizar los alumnos y sus notas.
+    //Visualizar alumnos y notas.
     public void visualizarLista(int[] arrayI, String[] arrayS) {
         for (int i = 0; i < arrayI.length; i++) {
             System.out.println("\nAlumno: " + arrayS[i]);
@@ -67,7 +61,8 @@ public class Notas {
 
         }
     }
-     //Método para visualizar la nota de un alumno.
+    //Visualizar la nota de un alumno.
+
     public void visualizarAlumno(int[] arrayI, String[] arrayS) {
         String alumno = darValorString();
         for (int i = 0; i < arrayS.length; i++) {
