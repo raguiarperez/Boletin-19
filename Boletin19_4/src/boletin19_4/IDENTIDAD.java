@@ -13,12 +13,12 @@ import javax.swing.JOptionPane;
  */
 public class IDENTIDAD {
     
- public void letra(int[] arrayI,String[] arrayS){
+ public void letra(int[] arrayL,String[] arrayS){
      int dni=Integer.parseInt(JOptionPane.showInputDialog("Número DNI: "));
      int resto=dni%23;
-      for (int i = 0; i < arrayI.length; i++) {
-           if(resto==arrayI[i]){
-            System.out.println("\nnº: " + arrayI[i]+"--> "+ arrayS[i]);           
+      for (int i = 0; i < arrayL.length; i++) {
+           if(resto==arrayL[i]){
+            System.out.println("\nnº: " + arrayL[i]+"--> "+ arrayS[i]);           
            }
         }
  }   
